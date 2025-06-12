@@ -1,7 +1,7 @@
 // Defina os pinos de LED e LDR
 // Defina uma variável com valor máximo do LDR (4000)
 // Defina uma variável para guardar o valor atual do LED (10)
-int ledPin = 25;
+int ledPin = 13;
 int ledValue = 10;
 int ldrPin = 34;
 
@@ -26,7 +26,6 @@ void loop() {
 
     if(Serial.available()){
       String command = Serial.readStringUntil('\n');
-      Serial.println(command.substring(0,7));
       processCommand(command);
     }
 
@@ -48,7 +47,7 @@ void processCommand(String command) {
     if (command.substring(0,7) == "SET_LED"){
         //String newValue = command.substring(8,11);
         int newValue =  command.substring(8,11).toInt();
-        if(newValue < 0 || newValue > 100){
+        if(newValue < 0 || newValue > 100 || newValue == '\0'){
             Serial.println("RES SET_LED -1");
         }
         else{
@@ -58,7 +57,7 @@ void processCommand(String command) {
     }
 
     else if(command.substring(0,7) == "GET_LED"){
-        Serial.printf("RES GET_LED %d\n", ledValue);
+        Serial.printf("RES GET_LED %d\n", ledGetValue());
     }
 
     else if(command.substring(0,7) == "GET_LDR"){
