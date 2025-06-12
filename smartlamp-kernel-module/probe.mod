@@ -1,0 +1,2 @@
+/home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.o
+

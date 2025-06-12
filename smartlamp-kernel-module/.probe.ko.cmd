@@ -1,0 +1,1 @@
+cmd_/home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.ko /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.o /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.mod.o;  true

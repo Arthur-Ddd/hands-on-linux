@@ -1,0 +1,1 @@
+cmd_/home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.mod := { echo  /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.o;  echo; } > /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.mod

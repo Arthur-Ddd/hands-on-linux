@@ -1,0 +1,1 @@
+cmd_/home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/Module.symvers := sed 's/\.ko$$/\.o/' /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/modules.order | scripts/mod/modpost -m -a  -o /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/Module.symvers -e -i Module.symvers   -T -

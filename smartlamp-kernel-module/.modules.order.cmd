@@ -1,0 +1,1 @@
+cmd_/home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/modules.order := {   echo /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/probe.ko; :; } | awk '!x[$$0]++' - > /home/tralalero/Desktop/hands-on-linux/smartlamp-kernel-module/modules.order
